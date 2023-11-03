@@ -163,7 +163,7 @@ START OF THE ABOUT.HTML CSS
 
 .image-skills-container {
   display: grid;
-  grid-template-columns: 1fr 40rem;
+  grid-template-columns: 8fr 4fr;
   /* flex-direction: column; */
 }
 
@@ -477,3 +477,98 @@ END OF THE CONTACT.HTML CSS
 
 /////////////////////////////////////////////////////////////////////
 */
+
+@media (max-width: 84em) {
+  .image-skills-container {
+    grid-template-columns: 70fr 4fr;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+
+  .image-skills-container {
+    grid-template-columns: 95fr 4fr;
+  }
+}
+
+/**************************/
+/* Below 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px */
+    font-size: 50%;
+  }
+  .inner-container {
+    width: 70%;
+  }
+  .image-skills-container {
+    grid-template-columns: 40fr 4fr;
+    /* flex-direction: column; */
+  }
+}
+
+/**************************/
+/* Below 704px (Tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .inner-container {
+    width: 50%;
+  }
+
+  .work-grid {
+    grid-template-columns: 18rem 18rem;
+  }
+
+  .nav-bar {
+    font-size: 1.8rem;
+  }
+
+  .flex-container {
+    gap: 11rem;
+  }
+
+  .image-skills-container {
+    grid-template-columns: 60fr 4fr;
+    /* flex-direction: column; */
+  }
+}
+
+/**************************/
+/* Below 544px (Phones) */
+/**************************/
+
+@media (max-width: 32em) {
+  .work-grid {
+    grid-template-columns: 13rem 13rem;
+  }
+
+  .nav-bar {
+    font-size: 1.5rem;
+  }
+
+  .inner-container {
+    width: 30%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    /* height: 64%; */
+    margin-top: 13rem;
+  }
+
+  .image-skills-container {
+    grid-template-columns: 8fr 4rem;
+    /* flex-direction: column; */
+  }
+}
