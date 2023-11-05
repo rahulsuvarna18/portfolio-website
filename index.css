@@ -125,6 +125,12 @@ START OF THE INDEX.HTML CSS
   color: inherit;
 }
 
+.index-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* 
 /////////////////////////////////////////////////////////////////////
 

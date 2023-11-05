@@ -144,6 +144,48 @@ body {
   color: inherit;
 }
 
+.index-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.index-container p {
+  font-size: 2.5rem;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.index-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.index-details img {
+  height: 250px;
+  width: auto;
+  border-radius: 100%;
+}
+
+.index-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.index-name h1 {
+  font-size: 2.5rem;
+}
+.index-name h3 {
+  font-size: 2rem;
+}
+
 /* 
     /////////////////////////////////////////////////////////////////////
     
@@ -190,7 +232,7 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 8fr 4fr;
-  grid-template-columns: 8fr 4fr;
+  grid-template-columns: 24fr 0fr;
   /* flex-direction: column; */
 }
 
@@ -523,7 +565,7 @@ textarea {
   border-radius: 1rem;
   border: 0 solid white;
   cursor: pointer;
-  background-color: #fae5d3;
+  background-color: #ff7600;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -538,7 +580,7 @@ textarea {
 
 .submit-button:hover,
 .submit-button:active {
-  background-color: #2f9e44;
+  background-color: #d26403;
 }
 
 .contact-details-div {
